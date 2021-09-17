@@ -1,4 +1,4 @@
-# frozen-string-literal: false
+# frozen-string-literal: true
 
 # chess board for knight_moves method
 class ChessBoard
