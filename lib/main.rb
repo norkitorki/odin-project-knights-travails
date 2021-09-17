@@ -7,4 +7,4 @@ BOARD = ChessBoard.new
 
 # example
 
-p knight_moves([2, 3], [7, 0], BOARD)
+knight_moves([2, 3], [7, 0], BOARD)
