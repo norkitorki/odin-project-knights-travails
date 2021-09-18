@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# module for marking path of a knight on a chess board
 module Trackable
   def track_path(board, path)
     return if path.length < 2
