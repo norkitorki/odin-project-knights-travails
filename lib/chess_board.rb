@@ -1,8 +1,12 @@
 # frozen-string-literal: true
 
-# chess board for knight_moves method
+# chess board class
 class ChessBoard
   attr_reader :fields
+
+  def self.chess_position(vector)
+    "#{('A'..'H').to_a[vector.last]}#{8 - vector.first}"
+  end
 
   def initialize
     @fields = Array.new(8) { Array.new(8, ' ') }
