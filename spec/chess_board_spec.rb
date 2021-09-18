@@ -5,7 +5,13 @@ require_relative '../lib/chess_board'
 describe ChessBoard do
   BOARD = ChessBoard.new
 
-  it 'should initialize an array representing each field on a chess board' do
+  context 'chess_position' do
+    it 'should convert a vector to a chess position' do
+      expect(ChessBoard.chess_position([0, 0])).to eq('A8')
+    end
+  end
+
+  it 'should initialize necessary state' do
     expect(BOARD.fields).to eq(Array.new(8) { Array.new(8, ' ') })
   end
 
