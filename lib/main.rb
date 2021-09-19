@@ -18,7 +18,7 @@ KNIGHT.track_path(BOARD, path)
 puts BOARD
 
 # print out each of the knight's moves
-puts "The Knight made it in #{path.length - 1} moves:"
+puts "\nThe Knight made it in #{path.length - 1} moves:"
 path[0..-2].each_with_index do |vec, i|
   next_vec = path[i + 1]
   puts "#{ChessBoard.chess_position(vec)} to #{ChessBoard.chess_position(next_vec)} (#{vec} to #{next_vec})"
