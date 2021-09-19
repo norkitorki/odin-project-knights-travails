@@ -12,18 +12,6 @@ describe Knight do
     expect(KNIGHT.moves).to eq([[1, 2], [2, 1]])
   end
 
-  context 'moveset' do
-    it 'should return possible moves from the current position' do
-      expect(KNIGHT.moveset).to eq([[1, 2], [2, 1]])
-    end
-
-    it 'should return possible moves from passed in position' do
-      expect(KNIGHT.moveset([2, 1])).to eq(
-        [[0, 0], [0, 2], [1, 3], [3, 3], [4, 0], [4, 2]]
-      )
-    end
-  end
-
   context 'knight_moves' do
     it 'should return the shortest path between two positions' do
       expect(KNIGHT.knight_moves([4, 5])).to eq([[0, 0], [1, 2], [2, 4], [4, 5]])
